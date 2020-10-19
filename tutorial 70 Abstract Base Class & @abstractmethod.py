@@ -12,11 +12,12 @@ class Rectangle(shape):
     type = "Rectangle"
     sides = 4
     def __init__(self):
-        self.length = 6
-        self.breadth = 7
+        self.length = int(input('enter the length in meters\n'))
+        self.breadth =int(input('enter the breadth in meters\n'))
 
     def printarea(self):
-        return self.length * self.breadth
+        print(f'The area of the rectangle is {self.length*self.breadth} meters')
+        return ' '
 
 rect1 = Rectangle()
 print(rect1.printarea())
