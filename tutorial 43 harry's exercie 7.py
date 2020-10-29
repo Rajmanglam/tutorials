@@ -52,7 +52,3 @@ if __name__ == '__main__':
             musiconloop('exercise.mp3', 'donephy')
             init_exercise = time()
             log_now("Physical Activity done at")
-
-
-
-
