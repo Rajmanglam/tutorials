@@ -31,7 +31,7 @@ def harry():
             f1 = open('harryfoodlooging.txt', 'a')
             print('enter the food you ate')
             n2=input()
-            f1.write(str([str(gettime())])+n2+'\n')#here we have used + to add data
+            f1.write(f"{n2} was ate at{str([str(gettime())])}\n")#here we have used + to add data
             print('your data has been stored thank you')
 
 
@@ -40,7 +40,7 @@ def harry():
             f1 = open('harryexerciselooging.txt', 'a')
             print('enter the exercise you did\n')
             e1=input()
-            f1.write(str([str(gettime())])+e1+'\n')
+            f1.write(f"{e1} was ate at{str([str(gettime())])}\n")
             print('your exercise details have been stored thank you')
 
 
@@ -80,7 +80,7 @@ def rohan():
             f1 = open('rohanfoodlooging.txt', 'a')
             print('enter the food you ate')
             n2=input()
-            f1.write(str([str(gettime())])+n2+'\n')#here we have used + to add data
+            f1.write(f"{n2} was ate at{str([str(gettime())])}\n")#here we have used + to add data
             print('your data has been stored thank you')
 
 
@@ -89,7 +89,7 @@ def rohan():
             f1 = open('rohanexerciselooging.txt', 'a')
             print('enter the exercise you did')
             e1=input()
-            f1.write(str([str(gettime())])+e1+'\n')
+            f1.write(f"{e1} was ate at{str([str(gettime())])}\n")
             print('your exercise details have been stored thank you')
 
 
@@ -128,7 +128,7 @@ def hamid():
             f1 = open('hamidfoodlooging.txt', 'a')
             print('enter the food you ate')
             n2=input()
-            f1.write(str([str(gettime())])+n2+'\n')#here we have used + to add data
+            f1.write(f"{n2} was ate at{str([str(gettime())])}\n")#here we have used + to add data
             print('your data has been stored thank you')
 
 
@@ -137,7 +137,7 @@ def hamid():
             f1 = open('hamidexerciselooging.txt', 'a')
             print('enter the exercise you did')
             e1=input()
-            f1.write(str([str(gettime())])+e1+'\n')
+            f1.write(f"{e1} was ate at{str([str(gettime())])}\n")
             print('your exercise details have been stored thank you')
 
 

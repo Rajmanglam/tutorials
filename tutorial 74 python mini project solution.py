@@ -13,10 +13,11 @@ class library():
         b.close()
 
     def display(self):
+        index=1
         for index, item in enumerate(self.list_of_books):
-            print(f'{index}.>{item} \n')
-        j=open(f"{self.list_of_books} logs.txt",'w')
-        j.write(f'this file was once displayed at {str([str(gettime())])}')
+            print(f'{index}.>{item}')
+        j=open(f"{self.library_name} logs.txt",'a')
+        j.write(f'this file was once displayed at {str([str(gettime())])}\n')
         return ' '
 
     def lendbook(self):
@@ -28,10 +29,15 @@ class library():
             j = open(f"{self.library_name} logs.txt", 'a')
             j.write(f'the book {o} was taken by {k}  at {str([str(gettime())])}\n')
             j.close()
+            l00=self.len_books
+            l00.update({o:f"was taken by {k}"})
             o1=self.list_of_books
             o1.remove(o)
         else:
-            print("sorry we don't have this book")
+            print("sorry we don't have this book\n take a look at our logs and see"
+                  " who has taken it and if it is not in it then our library don't"
+                  "have it")
+            print(f"{self.len_books}")
             j = open(f"{self.library_name} logs.txt", 'a')
             j.write(f'the book {o} was requested by {k}  at {str([str(gettime())])}\n')
             j.close()
@@ -42,6 +48,8 @@ class library():
         k=input('enter your name')
         k1=self.list_of_books
         k1.append(l1)
+        d4=self.len_books
+        d4.update({k:f"has returned {l1}"})
         j = open(f"{self.library_name} logs.txt", 'a')
         j.write(f'the book {l1} was returned by {k}  at {str([str(gettime())])}\n')
         j.close()
@@ -80,7 +88,7 @@ def main():
                  "'d' to display the books in library\n")
         if k4=='q':
             print('after you quit from this library your all data will be lost so please save your data')
-            l3=input('press any key to exit now')
+            l3=input('press enter key to exit now')
             if l3=='':
                 k33=True
         elif k4=='d':
@@ -89,10 +97,10 @@ def main():
             k.addbook()
         elif k4=='l':
             k.lendbook()
+
         elif k4 == 'r':
             k.return_book()
 
+
 if __name__=='__main__':
     main()
-
-
