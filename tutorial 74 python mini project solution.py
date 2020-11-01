@@ -22,9 +22,9 @@ class library():
 
     def lendbook(self):
         o=input('enter the book you want')
-        k = input('enter your name')
         i=0
         if o in self.list_of_books:
+            k = input('enter your name')
             print(f'the book {o} was taken by {k}\n')
             j = open(f"{self.library_name} logs.txt", 'a')
             j.write(f'the book {o} was taken by {k}  at {str([str(gettime())])}\n')
@@ -34,6 +34,7 @@ class library():
             o1=self.list_of_books
             o1.remove(o)
         else:
+            k = input('enter your name')
             print("sorry we don't have this book\n take a look at our logs and see"
                   " who has taken it and if it is not in it then our library don't"
                   "have it")
