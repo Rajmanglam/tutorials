@@ -2,12 +2,10 @@
 # to create a function which takes three input arguments, which are:
 #
 # def soldier("C://", "harry.txt", "jpg")
-#
 # Full Path of the folder as input strings.
 # Dictionary file
 # File Format
 # The function will perform three tasks:
-#
 # First, it will check all the files present in the folder
 # whose paths are given as an input argument.
 # Then it will capitalize the first letter of each file. If the name of the
