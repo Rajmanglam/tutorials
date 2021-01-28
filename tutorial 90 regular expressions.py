@@ -3,7 +3,7 @@
 # a concept that has a wide range of uses. To work with
 # regular expressions, we have to import a built-in module in python called ‘re’.
 import re
-mystr=mystr = '''Tata Limited
+mystr= '''Tata Limited
 Dr. David Landsman, executive director
 18, Grosvenor Place
 London SW1X 7HSc
