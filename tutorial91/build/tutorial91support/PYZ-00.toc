@@ -1,4 +1,4 @@
-('C:\\Users\\rajma\\PycharmProjects\\tuts\\build\\tutorial91support\\PYZ-00.pyz',
+('C:\\Users\\rajma\\PycharmProjects\\tuts\\tutorial91\\build\\tutorial91support\\PYZ-00.pyz',
  [('multiprocessing.popen_spawn_posix',
    'c:\\python 37\\lib\\multiprocessing\\popen_spawn_posix.py',
    'PYMODULE'),
