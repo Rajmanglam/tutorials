@@ -2,8 +2,11 @@
 # integer value.# The Program should take input from the user, and if the
 # entered number is less than the winning number,
 # a message should display that the number is smaller and vice versa.
-# no. of guesses=9 winning number=18
-n=18
+# no. of guesses=9
+import random
+n=1
+y=100
+n=random_number=random.randint(n,y)
 attempts=0
 while(attempts<=9):
     print('enter a number')
